@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 
 namespace CleanDownloads
 {
-    class ExpirationDate
+    class FileExpiration
     {
         readonly IConfiguration _config;
 
-        public ExpirationDate(IConfiguration config)
+        public FileExpiration(IConfiguration config)
         {
             _config = config;
-            Expiration = GetExpiryDate();
+            ExpirationDate = GetExpirationDate();
         }
 
-        public DateTime Expiration { get; }
+        public DateTime ExpirationDate { get; }
 
-        private DateTime GetExpiryDate()
+        private DateTime GetExpirationDate()
         {
             var expirationSection = _config.GetSection("Expiration");
             var years = -1 * expirationSection.GetValue<int>("Years");
