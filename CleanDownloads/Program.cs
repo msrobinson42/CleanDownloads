@@ -26,7 +26,10 @@ namespace CleanDownloads
                 .ConfigureServices((hostContext, services) =>
                 {
                     services.AddSingleton<IConfiguration>(config);
+
                     services.AddTransient<FileExpiration>();
+                    services.AddTransient<FileRecycler>();
+
                     services.AddHostedService<Worker>();
                 });
         }
