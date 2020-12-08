@@ -1,10 +1,15 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
+/* Clean Downloads
+ * 12/7/2020
+ * Windows service that moves files from
+ * a given directory to the recyling bin
+ * after a given expiration date.
+ * 
+ * Zach Robinson
+ */
 
 namespace CleanDownloads
 {

@@ -1,8 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+/* 12/7/2020
+ * Extension methods to wrap the
+ * functionality of the relational
+ * comparison of the DateTime class
+ * to make it more readable.
+ * 
+ * Zach Robinson
+ */
 
 namespace CleanDownloads
 {
